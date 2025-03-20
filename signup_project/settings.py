@@ -88,13 +88,14 @@ WSGI_APPLICATION = 'signup_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'signup_db',
-        'USER': 'root',
-        'PASSWORD': 'theanimesh2005',
-        'HOST': 'localhost',  
-        'PORT': '3306',  
+        'NAME': 'railway',  # From connection URL
+        'USER': 'root',  # From connection URL
+        'PASSWORD': 'rbQMMLFwjFVEEpGijSiZiGfAiBVPsyCj',  # From connection URL
+        'HOST': 'tramway.proxy.rlwy.net',  # From connection URL
+        'PORT': '31460',  # From connection URL
     }
 }
+
 
 
 # Password validation

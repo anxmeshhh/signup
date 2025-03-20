@@ -7,7 +7,7 @@ def signup_view(request):
         phone_number = request.POST.get('phone_number')
 
         with connection.cursor() as cursor:
-            cursor.execute("INSERT INTO signup_user (email, phone_number) VALUES (%s, %s)", [email, phone_number])
+            cursor.execute("INSERT INTO signup_users (email, phone_number) VALUES (%s, %s)", [email, phone_number])
 
         return redirect('success')
     

@@ -1,1 +1,1 @@
-gunicorn signup_project.wsgi:application
+gunicorn signup_project.wsgi

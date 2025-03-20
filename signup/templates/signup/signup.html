@@ -11,7 +11,8 @@
         <h2>Signup Form</h2>
         <form method="post">
             {% csrf_token %}
-            <input type="email" name="email" placeholder="Enter Email" required />
+            <!-- Email regex updated to require at least one character before @ -->
+            <input type="email" name="email" placeholder="Enter Email" required pattern=".{1,}@.*" title="Email must have at least 1 character before @" />
             <input type="text" name="phone_number" placeholder="Enter Phone Number" required />
             <button type="submit">Signup</button>
         </form>
